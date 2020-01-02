@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                       @Override
                       public void run() {
                           try {
-                              new DemoDao()
+
                               String string = response.body().string();
                               Gson gson = new Gson();
                               ListEntity listEntity = gson.fromJson(string, ListEntity.class);
